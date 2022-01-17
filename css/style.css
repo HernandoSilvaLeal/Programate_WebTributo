@@ -235,13 +235,13 @@ img {
 
 .tag-blue {
   background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
   color: #fafafa;
 }
 
@@ -253,11 +253,27 @@ background: linear-gradient(to bottom, #FFD194, #D1913C);
 
 
 .contentIntereses{
-    display: block;
-    height: 600px;
+    display: flex;
+    height: 500px;
     overflow: hidden;
+    justify-content: center;
+    align-items: top;
+    background: url("../img/img12_bannerAntesDeFooter.jpg") no-repeat center;
+    background-color: #cccccc;
+    margin-top: 40px;
 }
 
+
+.letreroIntereses{
+    justify-content: flex-end;
+    align-items: center;
+    width: 1000px;
+    text-align: center;
+    max-width: ;
+    font-size: 290%;
+    font-family: 'Raleway', sans-serif;
+
+}
 
 /* Contacto */
 .contentContact{
