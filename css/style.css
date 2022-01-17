@@ -155,48 +155,155 @@ ul {
 
 .imgAcercade{
     display: flex;
-    margin: 0 200px 0 240px;
-    height: 400px;
+    justify-content: center;
+    height: 430px;
+    border-radius: 50px;
 }
 
 
 /* Estilos Seccion Servicios Card */
 
-.serviciosCards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0% auto;
-    min-height: 5vh;
-    justify-content: space-between;
-    padding: 20px 0;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bodycards {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items:center;
+  height: 190vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
 }
 
 .card {
-    background:rgb(192, 192, 192);
-    width: 23%;
-    min-height: 300px;
-    overflow: hidden;
-    padding: 1.5em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    box-shadow: 0 0 40px -16px black;
-    border-radius: 4%;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+     background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-family: 'Raleway', sans-serif;
 
 }
 
-.card .contentCard {
-    flex: 1 1 auto;
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
-.imgCard{
+
+img {
     max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
 }
 
 
-.containerMain{
-    width: 85%;
-    margin:auto;
+.contentIntereses{
+    display: block;
+    height: 600px;
+    overflow: hidden;
 }
-/* flex-flow: column wrap; */
+
+
+/* Contacto */
+.contentContact{
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+    justify-content: space-around;
+    background-color: rgb(216, 216, 216);
+}
+
+footer section h2 {
+    width: 100%;
+    height: -0px;
+}
+
+.datosContacto{
+    display:flex;
+    width: 400px;
+    height: 100px; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.logoUbi{
+    width: 50px;
+    height: 50px;
+}
+
+.logosRedes{
+    display:flex;
+    width: 400px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+
+}
+
+.logoR{
+    width: 50px;
+    height: 50px;
+}
+
